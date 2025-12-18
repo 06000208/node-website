@@ -43,6 +43,8 @@ export const startTime = DateTime.now();
  */
 export const environmentVariableNames = {
     development: "DEV",
+    logLevel: "LOG_LEVEL",
+    fileLogLevel: "FILE_LOG_LEVEL",
 };
 
 /**

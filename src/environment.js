@@ -10,3 +10,9 @@ import { environmentVariableNames as names } from "./constants.js";
 
 export const development = stringToBoolean(env[names.development]);
 export const production = !development;
+
+/** Pino logging level */
+export const logLevel = env[names.logLevel] || "trace";
+
+/** Pino logging level for files under ./logs */
+export const fileLogLevel = env[names.fileLogLevel] || "trace";
